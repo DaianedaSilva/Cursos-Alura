@@ -1,0 +1,33 @@
+.app {
+    background: #f1f1f1;
+    display: grid;  /*display grid deve ser dado no pai */
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: /* class que irão ser aplicadas o grid*/
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    /*dizer tamanho das colunas e das linhas*/
+    grid-template-columns: auto; /*temos apenas uma coluna*/
+    grid-template-rows: 50px auto auto; /* temos 3 linhas, cabecalho, conteudo e rodape, o cabecalho terá 50px de largura/altura e os outros serão auto*/
+}
+
+.cabecalho {
+    align-items: center;
+    display: flex;
+    grid-area: cabecalho; /*definindo que usará a conf de grid cabecalho*/
+    padding: 0 2rem;
+}
+ 
+.conteudo {
+    grid-area: conteudo; /*definindo que usará a conf de grid conteudo*/
+    padding: 0 2rem;
+}
+
+.rodape {
+    grid-area: rodape; /*definindo que usará a conf de grid rodape*/
+    color: #333333;
+    font-size: .8rem;
+    grid-area: rodape;
+    padding: 1rem;
+    text-align: center;
+}
