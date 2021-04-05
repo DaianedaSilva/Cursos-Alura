@@ -2,7 +2,15 @@ public class Tiposdevariaveis {
 
     public static void main(String[] args){
 
-        System.out.println("** Trabalhando com Variávies do tipo INT **\n");
+        System.out.println("** Trbalhando com Variáveis do tipo BOOLEAN **\n");
+        //em java uma variável que aceita True ou false é uma boolean, não aceita 1 ou 0, apenas true ou false
+        boolean DaianeMaisVelha = false;
+        boolean LeoMaisVelho = true;
+
+        System.out.println("Daiane é mais velha que leo: " + DaianeMaisVelha);
+        System.out.println("Leo é mais velho que Daiane: " + LeoMaisVelho);
+
+        System.out.println("\n\n** Trabalhando com Variávies do tipo INT **\n");
        
         //java é uma linguagem fortemtete tipada, é preciso falar o tipo da variável
         int idadeDaiane;
@@ -16,7 +24,7 @@ public class Tiposdevariaveis {
 
         //Concatenando string e variável:::
         System.out.print("\nA idade da Daiane é: " + idadeDaiane); //print sem o ln, a proxima linha fica na mesma de saída
-        System.out.println("  A idade do Leo é: " + idadeLeo ); 
+        System.out.println("  A idade do Leo é: " + idadeLeo); 
 
         //Fazendo contas
         idadeDaiane = 30 * 7;
@@ -57,29 +65,24 @@ public class Tiposdevariaveis {
 
         System.out.println("\nNúmero maior que 2 bilhões: " + numeroGrande );
 
-        System.out.println("\n\n\n ** Trabalhando com Variávies do tipo SHORT **\n");
-        // GAURDA NUMÉROS PEQUENOS, até 16 bits
-
-
-
-
-
-
-
-
+        System.out.println("\n\n\n ** Trabalhando com Variávies do tipo Float **\n");
+        // O tipo de dados float é usado quando precisamos armazenar números de ponto-flutuante (com parte fracionária) na faixa 1.401298464324817e-45f até 3.402823476638528860e+38f.possui precisão de 6 ou 7 dígitos significativos.
+        
+        float valor = 54.5f; // necessário o f/F no fim do numero
+        
         System.out.println("Tipos de dados em Java: \n" +
-	            "\nMenor Byte: " + Byte.MIN_VALUE +
-	            "\nMaior Byte: " + Byte.MAX_VALUE +
-	            "\nMenor Short Int: " + Short.MIN_VALUE +
-	            "\nMaior Short Int: " + Short.MAX_VALUE +
-	            "\nMenor Int: " + Integer.MIN_VALUE +
-	            "\nMaior Int: " + Integer.MAX_VALUE +
-	            "\nMenor Long: " + Long.MIN_VALUE +
-	            "\nMaior Long:" + Long.MAX_VALUE +
-	            "\nMenor Float: " + Float.MIN_VALUE +
-	            "\nMaior Float: " + Float.MAX_VALUE +
-	            "\nMenor Double: " + Double.MIN_VALUE +
-	            "\nMaior Double: " + Double.MAX_VALUE);
+            "\nMenor Byte: " + Byte.MIN_VALUE +
+            "\nMaior Byte: " + Byte.MAX_VALUE +
+            "\nMenor Short Int: " + Short.MIN_VALUE + // GAURDA NUMÉROS PEQUENOS, até 16 bits
+            "\nMaior Short Int: " + Short.MAX_VALUE +
+            "\nMenor Int: " + Integer.MIN_VALUE +
+            "\nMaior Int: " + Integer.MAX_VALUE +
+            "\nMenor Long: " + Long.MIN_VALUE +
+            "\nMaior Long:" + Long.MAX_VALUE +
+            "\nMenor Float: " + Float.MIN_VALUE +
+            "\nMaior Float: " + Float.MAX_VALUE +
+            "\nMenor Double: " + Double.MIN_VALUE +
+            "\nMaior Double: " + Double.MAX_VALUE);
     }
 
 }
