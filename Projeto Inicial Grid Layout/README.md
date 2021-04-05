@@ -7,4 +7,4 @@
   Site desenvolvido com instrutor da Alura utilizando o CSS grid.
   
   
-### Site: https://daianedasilva.github.io/Cursos-Alura/Projeto%20Inicial%20Grid%20Layout/
+### Site: https://daianedasilva.github.io/Estudos/Projeto%20Inicial%20Grid%20Layout/
