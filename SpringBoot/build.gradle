@@ -1,0 +1,23 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.32'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.5'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget=1.8
+    }
+}
